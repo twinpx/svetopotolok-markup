@@ -1,0 +1,19 @@
+extends ./layouts/main.jade
+
+block title
+  title Main page | svetopotolok
+
+block content
+
+  .container
+  
+    include ./modules/top-menu/include
+    
+    hr.i-size-S.visible-xs
+    hr.hidden-xs
+    
+    include ./components/masonry/template
+    
+  hr
+    
+  include ./modules/props-menu/include

@@ -1,0 +1,169 @@
+.b-header
+  height 150px
+  transition( all 0.5s ease )
+  
+  &.i-fixed
+    height 60px
+  
+  &__container
+    width auto
+    background-color #000
+    color #fff
+    padding 45px 0
+    transition( all 0.5s ease )
+    
+    .i-fixed &
+      padding 6px 0
+      position fixed
+      top 0
+      left 0
+      width 100%
+      z-index 995
+  
+    @media( max-width 767px )
+      padding 20px 0
+      
+      .b-header__menu,
+      .b-header__tel
+        width 18px
+        height 18px
+        margin-top 10px
+        
+        img
+          vertical-align top
+        
+      .b-header__tel img
+        width 100%
+  
+  &__logo
+    text-align center
+    height 60px
+    display block
+    transition( all 0.5s ease )
+    
+    .i-fixed &
+      height 18px
+    
+    img
+      height 60px
+      width auto
+      vertical-align top
+      transition( all 0.5s ease )
+    
+      .i-fixed &
+        height 18px
+    
+    @media( max-width 767px )
+      
+      img
+        width 90%
+  
+  &__tel
+    text-align right
+    margin-top 18px
+    display block
+    font-family 'univia-pro', 'Russo One', sans-serif;
+    transition( all 0.5s ease )
+    
+    &,
+    &:hover,
+    &:focus,
+    &:active
+      color #fff
+    
+    .i-fixed &
+      font-size 6pt
+      margin-top 3px
+      transition( all 0.5s ease )
+    
+  &__menu
+    display block
+    width 24px
+    height 24px
+    margin-top 20px
+    transition( all 0.5s ease )
+    
+    img
+      vertical-align top
+      transition( all 0.5s ease )
+    
+    .i-fixed &
+      margin-top 4px
+    
+      &,
+      img
+        height 11px
+        width 11px
+
+.b-page
+  background-color #fff
+  
+.b-footer
+  background-color #000
+  color #fff
+  font-family "Helvetica Neue",Helvetica,Arial,sans-serif
+  font-weight 100
+  padding-top 59px
+  
+  hr
+    border-top-color #000
+  
+  a
+    color #fff
+    
+  @media( max-width 767px )
+    float none
+    text-align center
+    
+  &__top-menu
+    text-align center
+    margin-top 7px
+    font-family 'univia-pro', 'Russo One', sans-serif;
+    
+    a
+      display inline-block
+      margin 0 25px
+      font-weight bold
+      font-size 12pt
+      
+  &__top-phone
+    font-size 13.5pt
+    text-align right
+    position relative
+    float right
+    margin-top 7px
+    
+    @media( max-width 767px )
+      float none
+      text-align center
+    
+    &__icon
+      position absolute
+      top -32px
+      left -100px
+      width 84px
+      height 84px
+      background url( 'images/footer-phone.png' ) no-repeat center center
+    
+      @media( max-width 767px )
+        display none
+      
+  &__main-text
+    border-top 2px solid #fff
+    border-bottom 2px solid #fff
+    color #999
+    font-size 11pt
+    line-height 1.6
+    padding 56px 0 44px
+    margin-top 54px
+    
+    .b-h3
+      font-size 18pt
+      font-family 'univia-pro', 'Russo One', sans-serif
+      margin -4px 0 8px
+    
+  &__copyright
+    padding 55px 0 78px
+    font-size 10pt
+    color #ccc
+      

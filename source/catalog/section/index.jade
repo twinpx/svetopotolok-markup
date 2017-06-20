@@ -1,0 +1,51 @@
+﻿extends ../../layouts/main.jade
+
+block title
+  title Catalog section | svetopotolok
+
+block content
+
+  .container
+  
+    include ../../modules/top-menu/include
+    
+    hr.i-size-S.visible-xs
+    hr.hidden-xs
+    
+    h1.text-center Световые технологии
+    
+    hr
+    
+    .row
+      
+      .col-sm-6
+        include ../../modules/section-block/include
+        
+      hr.visible-xs
+      
+      .col-sm-6
+        include ../../modules/section-block/include2
+        
+    hr
+    
+    .row
+      
+      .col-sm-6
+        include ../../modules/section-block/include3
+        
+      hr.visible-xs
+      
+      .col-sm-6
+        include ../../modules/section-block/include
+    
+    hr
+    
+    .row
+      .col-sm-8.col-sm-offset-2
+        h2 Светопотолок
+        p Международная группа компаний «Светопотолок» – крупнейший производитель и поставщик современных энергоэффективных светотехнических решений в России и странах СНГ. Компания также работает на рынках Европы, Ближнего Востока и Азии.
+
+    
+  hr.i-size-M
+    
+  include ../../modules/props-menu/include

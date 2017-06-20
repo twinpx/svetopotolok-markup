@@ -1,0 +1,57 @@
+﻿//Этот блок не надо интегрировать
+#bx-panel-back( style="height: 20px; background-color: yellow;" )
+#bx-panel.bx-panel-fixed( style="height: 20px; background-color: yellow;" )
+  a#bx-panel__toggle
+    span.on Закрепить
+    span.off Открепить
+script
+  | (function($) { "use strict"; $(function() { $( '#bx-panel__toggle' ).click( function(e) { e.preventDefault(); $( '#bx-panel' ).toggleClass( 'bx-panel-fixed' ); $( '#bx-panel-back' ).toggle( !$( '#bx-panel-back' ).is( ':visible' )) }); }); })(jQuery);
+style
+  | #bx-panel__toggle { display: block; text-align: center; } #bx-panel #bx-panel__toggle .on { display: block; cursor: pointer; } #bx-panel #bx-panel__toggle .off { display: none; cursor: pointer; } #bx-panel.bx-panel-fixed #bx-panel__toggle .on { display: none; } #bx-panel.bx-panel-fixed #bx-panel__toggle .off { display: block; } #bx-panel.bx-panel-fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 995; }
+//Конец блока, который не надо интегрировать
+
+header.b-header
+
+  .b-header__container
+    .container
+      
+      .row
+      
+        .col-sm-4.col-xs-2
+          a.b-header__menu( href="" data-activates="slide-out" )
+            img( src="/template/images/svg/icon-menu.svg" )
+        
+        .col-sm-4.col-xs-8.text-center
+          a.b-header__logo( href="/" )
+            img( src="/template/images/svg/logo-svetopotolok.svg" )
+            
+        .col-sm-4.col-xs-2
+           a.b-header__tel( href="tel:+74951502750" )
+            span.hidden-xs +7 (495) 150-27-50
+            img.visible-xs( src="/template/images/svg/icon-phone.svg" )
+            
+
+
+//-ul#slide-out.side-nav
+  li
+    .userView
+      .background
+        img(src='images/office.jpg')
+      a(href='#!user')
+        img.circle(src='images/yuna.jpg')
+      a(href='#!name')
+        span.white-text.name John Doe
+      a(href='#!email')
+        span.white-text.email jdandturk@gmail.com
+  li
+    a(href='#!')
+      i.material-icons cloud
+      | First Link With Icon
+  li
+    a(href='#!') Second Link
+  li
+    .divider
+  li
+    a.subheader Subheader
+  li
+    a.waves-effect(href='#!') Third Link With Waves

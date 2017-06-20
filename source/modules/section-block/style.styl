@@ -1,0 +1,86 @@
+@import '../../styl/component-include.styl'
+
+.b-section-block
+  background-color #f4f4f4
+  font-size 8pt
+  font-weight 400
+  
+  img
+    width 100%
+    height auto
+    display inline-block
+    vertical-align top
+    
+  .b-h3
+    margin 0 0 5px
+    
+    a
+      color #000
+      text-decoration underline
+      
+  &__text
+    padding-top 23px
+    padding-right 45px
+    padding-bottom 90px
+      
+  &__price
+    margin-top 14px
+    
+  &__bottom
+    position absolute
+    bottom 30px
+    right 0
+    width 50%
+    
+    .text-right
+      padding-right 45px
+      padding-left 0
+    
+  .btn
+    padding 0
+    width 100%
+    max-width 110px
+    font-size 8pt
+    
+@media( min-width 992px ) and ( max-width 1199px )
+
+  .b-section-block
+
+    &__bottom
+    
+      .col-md-6.text-right
+        padding-right 30px
+    
+@media( min-width 768px ) and ( max-width 991px )
+
+  .b-section-block
+      
+    &__text
+      padding-bottom 100px
+
+    &__bottom
+    
+      .col-md-6.text-right
+        text-align left
+        padding-left 15px
+        
+      hr
+        clear both
+  
+  
+@media( max-width 767px )
+
+  .b-section-block
+    
+    &__image
+      padding 0
+      
+    &__text
+      padding-right 15px
+      background-color #f4f4f4
+
+    &__bottom
+      width 100%
+    
+      .text-right
+        padding-right 15px

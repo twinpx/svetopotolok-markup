@@ -1,0 +1,1 @@
+!function(a){"use strict";a(function(){a(".b-masonry__img").lazyload({effect:"fadeIn"})})}(jQuery);

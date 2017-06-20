@@ -1,0 +1,80 @@
+@import '../../styl/component-include.styl'
+
+.b-masonry
+  text-align left
+  
+  .row
+    margin-bottom 26px
+    
+    &:last-child
+      margin-bottom 0
+  
+  &__card
+    position relative
+    
+    img
+      width 100%
+      
+    .b-h4
+      position absolute
+      top 50px
+      left 0
+      width 100%
+      text-align center
+      font-size 14pt
+      color #000
+      font-family 'univia-pro', 'Russo One', sans-serif
+      padding 0 20px
+      
+    &.i-inverse
+      
+      .b-h4
+        top auto
+        bottom 50px
+        
+  &__img
+    padding-top 133%
+    background-repeat no-repeat
+    background-position center top
+    background-size cover
+      
+  &__text
+    background-color #f4f4f4
+    font-size 8pt
+    padding 20px 35px 20px 68px
+    margin-left 30px
+    color #000
+    font-family "Helvetica Neue", Helvetica, Arial, sans-serif
+    line-height 1.7
+    
+  .col-sm-8
+    
+    .b-masonry__text
+      margin-left 40%
+      padding 20px 140px 20px 95px
+    
+    .b-masonry__img
+      padding-top 64%
+    
+    @media( max-width 991px )
+    
+      .b-masonry__text
+        margin-left 30%
+        padding 20px 35px 20px 68px
+    
+    @media( max-width 767px )
+    
+      .b-masonry__text
+        margin-left 30px
+        padding 20px 35px 20px 68px
+    
+      .b-masonry__img
+        padding-top 133%
+        
+  @media( max-width 767px )
+    
+    .col-sm-8,
+    .col-sm-4
+      padding-right 0
+      padding-left 0
+      

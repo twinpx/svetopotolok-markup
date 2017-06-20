@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main page | svetopotolok</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/template/template_styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One:100,300,400,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/template/jscript.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <!--Этот блок не надо интегрировать-->
+    <div id="bx-panel-back" style="height: 20px; background-color: yellow;"></div>
+    <div id="bx-panel" style="height: 20px; background-color: yellow;" class="bx-panel-fixed"><a id="bx-panel__toggle"><span class="on">Закрепить</span><span class="off">Открепить</span></a></div>
+    <script>(function($) { "use strict"; $(function() { $( '#bx-panel__toggle' ).click( function(e) { e.preventDefault(); $( '#bx-panel' ).toggleClass( 'bx-panel-fixed' ); $( '#bx-panel-back' ).toggle( !$( '#bx-panel-back' ).is( ':visible' )) }); }); })(jQuery);</script>
+    <style>#bx-panel__toggle { display: block; text-align: center; } #bx-panel #bx-panel__toggle .on { display: block; cursor: pointer; } #bx-panel #bx-panel__toggle .off { display: none; cursor: pointer; } #bx-panel.bx-panel-fixed #bx-panel__toggle .on { display: none; } #bx-panel.bx-panel-fixed #bx-panel__toggle .off { display: block; } #bx-panel.bx-panel-fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 995; }</style>
+    <!--Конец блока, который не надо интегрировать-->
+    <header class="b-header">
+      <div class="b-header__container">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-xs-2"><a href="" data-activates="slide-out" class="b-header__menu"><img src="/template/images/svg/icon-menu.svg"></a></div>
+            <div class="col-sm-4 col-xs-8 text-center"><a href="/" class="b-header__logo"><img src="/template/images/svg/logo-svetopotolok.svg"></a></div>
+            <div class="col-sm-4 col-xs-2"><a href="tel:+74951502750" class="b-header__tel"><span class="hidden-xs">+7 (495) 150-27-50</span><img src="/template/images/svg/icon-phone.svg" class="visible-xs"></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="b-page">
+      <div class="container">
+        <div class="b-top-menu hidden-xs"><a href="">Световые технологии</a><a href="">Дизайнерам</a><a href="">О компании</a></div>
+        <hr class="i-size-S visible-xs">
+        <hr class="hidden-xs">
+        <!-- start /components/masonry/-->
+        <link rel="stylesheet" href="/components/masonry/style.css">
+        <script src="/components/masonry/script.js"></script>
+        <div class="b-masonry">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="b-masonry__card">
+                <div data-original="/upload/masonry/1.jpg" class="b-masonry__img"></div>
+                <div class="b-h4">Световые панели</div>
+                <div class="b-masonry__text">Световые панели.<br>Панели освещения устанавливаемые на потолке, стенах. Освещение холодными и теплыми оттенками.</div>
+              </div>
+            </div>
+            <hr class="visible-xs">
+            <div class="col-sm-4">
+              <div class="b-masonry__card i-inverse">
+                <div class="b-masonry__text">Светящийся потолок.<br>Панели освещения устанавливаемые на потолке, стенах. Освещение холодными и теплыми оттенками.</div>
+                <div data-original="/upload/masonry/2.jpg" class="b-masonry__img"></div>
+                <div class="b-h4">Светящийся потолок</div>
+              </div>
+            </div>
+            <hr class="visible-xs">
+            <div class="col-sm-4">
+              <div class="b-masonry__card">
+                <div data-original="/upload/masonry/3.jpg" class="b-masonry__img"></div>
+                <div class="b-h4">Световые стены</div>
+                <div class="b-masonry__text">Светящийся потолок.<br>Панели освещения устанавливаемые на потолке, стенах. Освещение холодными и теплыми оттенками.</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="b-masonry__card">
+                <div data-original="/upload/masonry/4.jpg" class="b-masonry__img"></div>
+                <div class="b-h4">Системы управления светом</div>
+                <div class="b-masonry__text">Светящийся потолок.<br>Панели освещения устанавливаемые на потолке, стенах. Освещение холодными и теплыми оттенками.</div>
+              </div>
+            </div>
+            <hr class="visible-xs">
+            <div class="col-sm-4">
+              <div class="b-masonry__card">
+                <div data-original="/upload/masonry/3.jpg" class="b-masonry__img"></div>
+                <div class="b-h4">Биодинамическое<br>освещение</div>
+                <div class="b-masonry__text">Светящийся потолок.<br>Панели освещения устанавливаемые на потолке, стенах. Освещение холодными и теплыми оттенками.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end /components/masonry/-->
+      </div>
+      <hr>
+      <div class="b-props-menu">
+        <div class="container">
+          <div class="col-sm-4"><img src="/template/images/svg/1.png">
+            <div class="b-h4">Оперативная реакция</div>
+            <p>Наши специалисты примут ваш заказ и подготовять индивидуальное предложение.</p>
+          </div>
+          <hr class="visible-xs">
+          <div class="col-sm-4"><img src="/template/images/svg/2.png">
+            <div class="b-h4">Лучшая цена</div>
+            <p>Вы получаете лучшее качество по оптимальной цене.</p>
+          </div>
+          <hr class="visible-xs">
+          <div class="col-sm-4"><img src="/template/images/svg/3.png">
+            <div class="b-h4">Шоурум</div>
+            <p>Посмотреть, испытать и выбрать всего в 2км от МКАД.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="b-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">Ул. Исаковского, дом 33,<br>офис 450, Москва.</div>
+          <div class="col-sm-6 b-footer__top-menu hidden-xs"><a href="">Световые технологии</a><a href="">Дизайнерам</a><a href="">О компании</a></div>
+          <hr class="visible-xs">
+          <div class="col-sm-3">
+            <div class="b-footer__top-phone">
+              <div class="b-footer__top-phone__icon"></div><a href="tel:+74951502750">+7 (495) 150-27-50</a>
+            </div>
+          </div>
+        </div>
+        <div class="b-footer__main-text">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="b-h3">Светопотолок</div>
+                  <p>Международная группа компаний «Светопотолок» – крупнейший производитель и поставщик современных энергоэффективных светотехнических решений в России и странах СНГ. Компания также работает на рынках Европы, Ближнего Востока и Азии.</p>
+                </div>
+                <div class="col-sm-6">
+                  <p>Широкая продуктовая линейка<br>Ассортимент выпускаемой продукции насчитывает более 3 000 модификаций светильников для внутреннего и наружного освещения общественно-административных зданий, спортивных сооружений, торговых комплексов, производственных объектов.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b-footer__copyright">© 2017 Светопотолок. Сделано в Twin px</div>
+      </div>
+    </footer>
+  </body>
+</html>
