@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Detail page | svetopotolok</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/template/template_styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One:100,300,400,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/template/jscript.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <!--Этот блок не надо интегрировать-->
+    <div id="bx-panel-back" style="height: 20px; background-color: yellow;"></div>
+    <div id="bx-panel" style="height: 20px; background-color: yellow;" class="bx-panel-fixed"><a id="bx-panel__toggle"><span class="on">Закрепить</span><span class="off">Открепить</span></a></div>
+    <script>(function($) { "use strict"; $(function() { $( '#bx-panel__toggle' ).click( function(e) { e.preventDefault(); $( '#bx-panel' ).toggleClass( 'bx-panel-fixed' ); $( '#bx-panel-back' ).toggle( !$( '#bx-panel-back' ).is( ':visible' )) }); }); })(jQuery);</script>
+    <style>#bx-panel__toggle { display: block; text-align: center; } #bx-panel #bx-panel__toggle .on { display: block; cursor: pointer; } #bx-panel #bx-panel__toggle .off { display: none; cursor: pointer; } #bx-panel.bx-panel-fixed #bx-panel__toggle .on { display: none; } #bx-panel.bx-panel-fixed #bx-panel__toggle .off { display: block; } #bx-panel.bx-panel-fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 995; }</style>
+    <!--Конец блока, который не надо интегрировать-->
+    <header class="b-header">
+      <div class="b-header__container">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-xs-2"><a href="" data-activates="slide-out" class="b-header__menu"><img src="/template/images/svg/icon-menu.svg"></a></div>
+            <div class="col-sm-4 col-xs-8 text-center"><a href="/" class="b-header__logo"><img src="/template/images/svg/logo-svetopotolok.svg"></a></div>
+            <div class="col-sm-4 col-xs-2"><a href="tel:+74951502750" class="b-header__tel"><span class="hidden-xs">+7 (495) 150-27-50</span><img src="/template/images/svg/icon-phone.svg" class="visible-xs"></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="b-page">
+      <div class="container">
+        <div class="b-top-menu hidden-xs"><a href="">Световые технологии</a><a href="">Дизайнерам</a><a href="">О компании</a></div>
+        <hr class="i-size-S visible-xs">
+        <hr class="hidden-xs">
+        <h1 class="text-center">Световые потолки</h1>
+        <hr>
+        <!-- start /components/catalog.detail/-->
+        <link rel="stylesheet" href="/components/catalog.detail/style.css">
+        <script src="/components/catalog.detail/script.js"></script>
+        <div class="b-catalog-detail">
+          <div class="row">
+            <div class="col-sm-9">
+              <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+              <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+              <div data-nav="thumbs" data-loop="true" data-allowfullscreen="true" data-ratio="4/3" class="fotorama"><img src="/upload/catalog.detail/1.jpg"><img src="/upload/catalog.detail/1.jpg"><img src="/upload/catalog.detail/1.jpg"><img src="/upload/catalog.detail/1.jpg"><img src="/upload/catalog.detail/1.jpg"></div>
+            </div>
+            <hr class="visible-xs">
+            <div class="col-sm-3">
+              <div class="b-catalog-detail__price">от 5 000 руб./м²</div>
+              <p>Современные световые потолки создают качественное равномерное освещение с эффектом дневного света. Такое освещение создает приятную атмосферу в любых помещениях особенно в помещениях с недостаточным естественным освещением.</p>
+              <hr><a href="" class="btn btn-default i-size-L">Отправить заявку</a>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-7 col-sm-offset-1">
+              <div class="b-catalog-detail__hr"></div>
+              <div class="b-h2">Световые потолки</div>
+              <p>Предлагаем проектирование и установку натяжных потолков с внутренней подсветкой для:</p>
+              <ul>
+                <li>квартир</li>
+                <li>коттеджейНаша компания предлагает полный комплекс услуг по установке световых потолков и их управления от простого включения / выключения до интеграции в системы Умного дома! Используя специально разработанные материалы для световых</li>
+                <li>торговых комплексов</li>
+                <li>автосалонов</li>
+                <li>косметических салонов</li>
+                <li>фитнесцентров </li>
+              </ul>
+              <p>и других зон где необходимо бестеневое приятное глазу освещение.</p>
+              <p>Наша компания предлагает полный комплекс услуг по установке световых потолков и их управления от простого включения / выключения до интеграции в системы Умного дома! Используя специально разработанные материалы для световых натяжных потолков и светодиодные модули, мы создадим для вас потолки с декоративной подсветкой или равномерной подсветкой по всей площади потолка в качестве основного освещения.</p>
+            </div>
+            <hr class="visible-xs">
+            <div class="col-sm-2 b-catalog-detail__props">
+              <p>Глубина светового потолка<span class="text-muted">50-200 мм (оптимальная 150 мм)</span></p>
+              <p>Максимальная ширина без шва<span class="text-muted">3.60/5.00 м (ПВХ / Тканевый)</span></p>
+              <p>Энергопотребление<span class="text-muted">от 30 Вт/м2</span></p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="b-offer-block">
+                <div class="b-h3">Типовой проект</div>
+                <div class="b-offer-block__text">Подсвеченный изнутри потолок привнесет в помещение эффект естественного освещения, независимо от погоды и времени суток.</div>
+                <div class="b-offer-block__hr"></div>
+                <div class="row">
+                  <div class="col-lg-6 b-offer-block__price">5 000 руб/м²</div>
+                  <hr class="i-size-S hidden-lg">
+                  <div class="col-lg-6"><a href="" class="btn btn-type-2">Отправить заявку</a></div>
+                </div>
+              </div>
+            </div>
+            <hr class="i-size-S visible-xs">
+            <div class="col-sm-4">
+              <div class="b-offer-block">
+                <div class="b-h3">Типовой проект с доработкой с учетом пожеланий</div>
+                <div class="b-offer-block__text">Подсвеченный изнутри потолок привнесет в помещение эффект естественного освещения, независимо от погоды и времени суток.</div>
+                <div class="b-offer-block__hr"></div>
+                <div class="row">
+                  <div class="col-lg-6 b-offer-block__price">5 000 руб/м²</div>
+                  <hr class="i-size-S hidden-lg">
+                  <div class="col-lg-6"><a href="" class="btn btn-type-2">Отправить заявку</a></div>
+                </div>
+              </div>
+            </div>
+            <hr class="i-size-S visible-xs">
+            <div class="col-sm-4">
+              <div class="b-offer-block">
+                <div class="b-h3">Индивидуальный проект</div>
+                <div class="b-offer-block__text">Подсвеченный изнутри потолок привнесет в помещение эффект естественного освещения, независимо от погоды и времени суток.</div>
+                <div class="b-offer-block__hr"></div>
+                <div class="row">
+                  <div class="col-lg-6 b-offer-block__price">5 000 руб/м²</div>
+                  <hr class="i-size-S hidden-lg">
+                  <div class="col-lg-6"><a href="" class="btn btn-type-2">Отправить заявку</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="i-size-L i-line">
+          <div class="row b-call-me">
+            <div class="col-sm-4 col-sm-offset-2 text-center"><img src="/template/images/call-me-ill.png"></div>
+            <hr class="visible-xs">
+            <div class="col-sm-4">
+              <div class="b-h2">Помочь с формулировкой задачи?</div>
+              <hr class="i-size-S">
+              <p>Закажите обратный звонок и наш сотрудник свяжется с вами и поможет сформулировтать ваши задачи, а также подготовим ком. предложение.</p>
+              <hr class="i-size-S">
+              <hr class="i-size-S"><a href="" class="btn btn-type-2 i-size-L">Перезвоните мне</a>
+            </div>
+          </div>
+        </div>
+        <!-- end /components/catalog.detail/-->
+      </div>
+      <hr>
+      <div class="b-props-menu">
+        <div class="container">
+          <div class="col-sm-4"><img src="/template/images/svg/1.png">
+            <div class="b-h4">Оперативная реакция</div>
+            <p>Наши специалисты примут ваш заказ и подготовять индивидуальное предложение.</p>
+          </div>
+          <hr class="visible-xs">
+          <div class="col-sm-4"><img src="/template/images/svg/2.png">
+            <div class="b-h4">Лучшая цена</div>
+            <p>Вы получаете лучшее качество по оптимальной цене.</p>
+          </div>
+          <hr class="visible-xs">
+          <div class="col-sm-4"><img src="/template/images/svg/3.png">
+            <div class="b-h4">Шоурум</div>
+            <p>Посмотреть, испытать и выбрать всего в 2км от МКАД.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="b-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">Ул. Исаковского, дом 33,<br>офис 450, Москва.</div>
+          <div class="col-sm-6 b-footer__top-menu hidden-xs"><a href="">Световые технологии</a><a href="">Дизайнерам</a><a href="">О компании</a></div>
+          <hr class="visible-xs">
+          <div class="col-sm-3">
+            <div class="b-footer__top-phone">
+              <div class="b-footer__top-phone__icon"></div><a href="tel:+74951502750">+7 (495) 150-27-50</a>
+            </div>
+          </div>
+        </div>
+        <div class="b-footer__main-text">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="b-h3">Светопотолок</div>
+                  <p>Международная группа компаний «Светопотолок» – крупнейший производитель и поставщик современных энергоэффективных светотехнических решений в России и странах СНГ. Компания также работает на рынках Европы, Ближнего Востока и Азии.</p>
+                </div>
+                <div class="col-sm-6">
+                  <p>Широкая продуктовая линейка<br>Ассортимент выпускаемой продукции насчитывает более 3 000 модификаций светильников для внутреннего и наружного освещения общественно-административных зданий, спортивных сооружений, торговых комплексов, производственных объектов.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b-footer__copyright">© 2017 Светопотолок. Сделано в Twin px</div>
+      </div>
+    </footer>
+  </body>
+</html>

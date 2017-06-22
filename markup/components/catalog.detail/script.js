@@ -1,0 +1,1 @@
+!function(a){"use strict";a(function(){a(".b-catalog-detail .fotorama").fotorama({thumbwidth:"100px",thumbheight:"100px"})})}(jQuery);

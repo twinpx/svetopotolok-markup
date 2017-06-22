@@ -1,0 +1,84 @@
+﻿// start /components/catalog.detail/
+
+link( rel="stylesheet", href="/components/catalog.detail/style.css" )
+script( src="/components/catalog.detail/script.js" )
+
+.b-catalog-detail
+
+  .row
+    
+    .col-sm-9
+      include fotorama
+      .fotorama( data-nav="thumbs" data-loop="true" data-allowfullscreen="true" data-ratio="4/3" )
+        img( src="/upload/catalog.detail/1.jpg" )
+        img( src="/upload/catalog.detail/1.jpg" )
+        img( src="/upload/catalog.detail/1.jpg" )
+        img( src="/upload/catalog.detail/1.jpg" )
+        img( src="/upload/catalog.detail/1.jpg" )
+        
+    hr.visible-xs
+        
+    .col-sm-3
+      
+      .b-catalog-detail__price от 5 000 руб./м²
+      
+      p Современные световые потолки создают качественное равномерное освещение с эффектом дневного света. Такое освещение создает приятную атмосферу в любых помещениях особенно в помещениях с недостаточным естественным освещением.
+      
+      hr
+      
+      a.btn.btn-default.i-size-L( href="" ) Отправить заявку
+      
+  hr
+      
+  .row
+    
+    .col-sm-7.col-sm-offset-1
+  
+      .b-catalog-detail__hr
+    
+      .b-h2 Световые потолки
+      p Предлагаем проектирование и установку натяжных потолков с внутренней подсветкой для:
+      ul
+        li квартир
+        li коттеджейНаша компания предлагает полный комплекс услуг по установке световых потолков и их управления от простого включения / выключения до интеграции в системы Умного дома! Используя специально разработанные материалы для световых
+        li торговых комплексов
+        li автосалонов
+        li косметических салонов
+        li фитнесцентров 
+      p и других зон где необходимо бестеневое приятное глазу освещение.
+      p Наша компания предлагает полный комплекс услуг по установке световых потолков и их управления от простого включения / выключения до интеграции в системы Умного дома! Используя специально разработанные материалы для световых натяжных потолков и светодиодные модули, мы создадим для вас потолки с декоративной подсветкой или равномерной подсветкой по всей площади потолка в качестве основного освещения.
+      
+    hr.visible-xs
+      
+    .col-sm-2.b-catalog-detail__props
+      p Глубина светового потолка
+        span.text-muted 50-200 мм (оптимальная 150 мм)
+      
+      p Максимальная ширина без шва
+        span.text-muted 3.60/5.00 м (ПВХ / Тканевый)
+      
+      p Энергопотребление
+        span.text-muted от 30 Вт/м2
+        
+  hr
+        
+  .row
+  
+    .col-sm-4
+      include ../../modules/offer-block/include
+      
+    hr.i-size-S.visible-xs
+  
+    .col-sm-4
+      include ../../modules/offer-block/include2
+      
+    hr.i-size-S.visible-xs
+  
+    .col-sm-4
+      include ../../modules/offer-block/include3
+      
+  hr.i-size-L.i-line
+  
+  include ../../modules/call-me/include
+
+// end /components/catalog.detail/

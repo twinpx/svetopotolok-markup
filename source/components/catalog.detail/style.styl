@@ -1,0 +1,46 @@
+@import '../../styl/component-include.styl'
+
+.b-catalog-detail
+
+  .fotorama__arr
+    width 100px
+    height 100px
+    margin-top -50px
+    
+    &--prev
+      background embedurl( 'img/arrow-left.png' ) no-repeat 0 0
+    
+    &--next
+      background embedurl( 'img/arrow-right.png' ) no-repeat 0 0
+      
+  .fotorama__fullscreen-icon
+    background embedurl( 'img/fullscreen-icon.png' ) no-repeat 0 0
+    top 11px
+    right 11px
+    
+  .fotorama__thumb-border
+    display none
+    
+  &__price
+    font-family 'univia-pro', 'Russo One', sans-serif
+    font-size 14pt
+    margin 20px 0 52px
+    
+    @media( max-width 767px )
+      margin-bottom 30px
+    
+  &__hr
+    border-top 3px solid #666666
+    width 160px
+    margin-bottom 11px
+    
+  &__props
+    font-size 10pt
+    line-height 1.3
+    
+    p
+      margin 0 0 28px
+    
+    .text-muted
+      display block
+      margin-top 7px

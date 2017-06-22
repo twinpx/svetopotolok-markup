@@ -24,7 +24,7 @@
     padding-bottom 90px
       
   &__price
-    margin-top 14px
+    margin-top 12px
     
   &__bottom
     position absolute
@@ -42,31 +42,21 @@
     max-width 110px
     font-size 8pt
     
-@media( min-width 992px ) and ( max-width 1199px )
-
-  .b-section-block
-
-    &__bottom
-    
-      .col-md-6.text-right
-        padding-right 30px
-    
-@media( min-width 768px ) and ( max-width 991px )
+@media( min-width 768px ) and ( max-width 1199px )
 
   .b-section-block
       
     &__text
-      padding-bottom 100px
+      padding-left 45px
 
     &__bottom
+      width 100%
     
-      .col-md-6.text-right
-        text-align left
-        padding-left 15px
-        
-      hr
-        clear both
-  
+      .col-xs-6:first-of-type
+        padding-left 45px
+    
+      .col-xs-6:last-of-type
+        padding-right 45px  
   
 @media( max-width 767px )
 
