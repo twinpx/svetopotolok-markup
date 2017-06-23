@@ -12,46 +12,34 @@ style
 
 header.b-header
 
-  .b-header__container
-    .container
-      
-      .row
-      
-        .col-sm-4.col-xs-2
-          a.b-header__menu( href="" data-activates="slide-out" )
-            img( src="/template/images/svg/icon-menu.svg" )
+  .b-header__container( style="background-image: url( '/template/images/head-ill.gif' );" )
+  
+    .b-header__body
+    
+      .container
         
-        .col-sm-4.col-xs-8.text-center
-          a.b-header__logo( href="/" )
-            img( src="/template/images/svg/logo-svetopotolok.svg" )
-            
-        .col-sm-4.col-xs-2
-           a.b-header__tel( href="tel:+74951502750" )
-            span.hidden-xs +7 (495) 150-27-50
-            img.visible-xs( src="/template/images/svg/icon-phone.svg" )
-            
+        .row
+        
+          .col-sm-4.col-xs-2
+            a.b-header__menu( href="" data-activates="slide-out" )
+              img( src="/template/images/svg/icon-menu.svg" )
+          
+          .col-sm-4.col-xs-8.text-center
+            a.b-header__logo( href="/" )
+              img( src="/template/images/svg/logo-svetopotolok.svg" )
+              
+          .col-sm-4.col-xs-2
+             a.b-header__tel( href="tel:+74951502750" )
+              span.hidden-xs +7 (495) 150-27-50
+              img.visible-xs( src="/template/images/svg/icon-phone.svg" )
+              
 
 
-//-ul#slide-out.side-nav
-  li
-    .userView
-      .background
-        img(src='images/office.jpg')
-      a(href='#!user')
-        img.circle(src='images/yuna.jpg')
-      a(href='#!name')
-        span.white-text.name John Doe
-      a(href='#!email')
-        span.white-text.email jdandturk@gmail.com
-  li
-    a(href='#!')
-      i.material-icons cloud
-      | First Link With Icon
-  li
-    a(href='#!') Second Link
-  li
-    .divider
-  li
-    a.subheader Subheader
-  li
-    a.waves-effect(href='#!') Third Link With Waves
+#slide-out.side-nav
+
+  .side-nav__item
+    a( href='/catalog/section/' ) Световые технологии
+  .side-nav__item
+    a( href='/catalog/section/' ) Дизайнерам
+  .side-nav__item
+    a( href='/catalog/section/' ) О компании
