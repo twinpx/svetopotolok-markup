@@ -1,0 +1,55 @@
+﻿extends ../../layouts/main.jade
+
+block title
+  title Form | svetopotolok
+
+block content
+
+  .container
+  
+    include ../../modules/top-menu/include
+    
+    hr.i-size-S.visible-xs
+    hr.hidden-xs
+    
+    .row
+      
+      .col-sm-8.col-sm-offset-2
+      
+        h1.text-center Отправить заявку
+        
+        hr.i-size-S
+        
+        p.text-center Сообщите ваши контактные данные и мы свяжемся с вами в ближайшие часы.
+        
+        hr.i-size-S
+    
+        form( action=""  method="" )
+          
+          .input-field
+            input#name.validate( type="text" required )
+            label( for="name" ) Ваше имя
+          
+          .input-field
+            input#phone.validate( type="tel" )
+            label( for="phone" ) Ваш телефон
+          
+          .input-field
+            input#email.validate( type="email" )
+            label( for="email" ) Ваш email
+            
+          hr
+            
+          .b-form-button.text-center
+            button.button.button-type-2.i-size-L( type="submit" ) Отправить
+        
+        hr
+        
+        .text-center
+          .b-h1 Спасибо, ваша заявка была отправлена
+          hr
+          p Наш сотрудник свяжется с вами в ближашее время.
+    
+  hr
+    
+  include ../../modules/props-menu/include

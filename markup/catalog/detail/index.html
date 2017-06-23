@@ -7,13 +7,24 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="/template/template_styles.css">
     <link href="https://fonts.googleapis.com/css?family=Russo+One:100,300,400,700" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="/template/jscript.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'xzw6fwr',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
   </head>
   <body>
     <!--Этот блок не надо интегрировать-->
@@ -54,7 +65,8 @@
             <div class="col-sm-3">
               <div class="b-catalog-detail__price">от 5 000 руб./м²</div>
               <p>Современные световые потолки создают качественное равномерное освещение с эффектом дневного света. Такое освещение создает приятную атмосферу в любых помещениях особенно в помещениях с недостаточным естественным освещением.</p>
-              <hr><a href="" class="btn btn-default i-size-L">Отправить заявку</a>
+              <hr>
+              <div class="b-catalog-detail__button"><a href="/catalog/form/" class="button button-default i-size-L">Отправить заявку</a></div>
             </div>
           </div>
           <hr>
@@ -91,7 +103,7 @@
                 <div class="row">
                   <div class="col-lg-6 b-offer-block__price">5 000 руб/м²</div>
                   <hr class="i-size-S hidden-lg">
-                  <div class="col-lg-6"><a href="" class="btn btn-type-2">Отправить заявку</a></div>
+                  <div class="col-lg-6"><a href="/catalog/form/" class="button button-type-2">Отправить заявку</a></div>
                 </div>
               </div>
             </div>
@@ -104,7 +116,7 @@
                 <div class="row">
                   <div class="col-lg-6 b-offer-block__price">5 000 руб/м²</div>
                   <hr class="i-size-S hidden-lg">
-                  <div class="col-lg-6"><a href="" class="btn btn-type-2">Отправить заявку</a></div>
+                  <div class="col-lg-6"><a href="/catalog/form/" class="button button-type-2">Отправить заявку</a></div>
                 </div>
               </div>
             </div>
@@ -117,7 +129,7 @@
                 <div class="row">
                   <div class="col-lg-6 b-offer-block__price">5 000 руб/м²</div>
                   <hr class="i-size-S hidden-lg">
-                  <div class="col-lg-6"><a href="" class="btn btn-type-2">Отправить заявку</a></div>
+                  <div class="col-lg-6"><a href="/catalog/form/" class="button button-type-2">Отправить заявку</a></div>
                 </div>
               </div>
             </div>
@@ -131,7 +143,8 @@
               <hr class="i-size-S">
               <p>Закажите обратный звонок и наш сотрудник свяжется с вами и поможет сформулировтать ваши задачи, а также подготовим ком. предложение.</p>
               <hr class="i-size-S">
-              <hr class="i-size-S"><a href="" class="btn btn-type-2 i-size-L">Перезвоните мне</a>
+              <hr class="i-size-S">
+              <div class="b-call-me__button"><a href="/catalog/form/" class="button button-type-2 i-size-L">Перезвоните мне</a></div>
             </div>
           </div>
         </div>
