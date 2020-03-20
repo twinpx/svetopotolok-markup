@@ -48,7 +48,7 @@
       .b-header__tel
         width 24px
         height 24px
-        margin-top 10px
+        margin-top 18px
         
         img
           vertical-align top
@@ -141,22 +141,19 @@
     text-align center
     
   &__top-menu
-    text-align center
-    margin-top 7px
     font-family 'univia-pro', 'Open Sans', sans-serif;
-    
-    @media( max-width 1350px )
-      display none
     
     a
       display inline-block
-      margin 0 25px
+      margin 0 50px 10px 0
       font-weight normal
-      font-size 12pt
+      white-space nowrap
+      
+      @media ( max-width: 767px )
+        margin 0 10px 10px
       
   &__top-phone
-    font-family 'univia-pro'
-    font-size 12pt
+    font-family 'univia-pro', 'Open Sans', sans-serif;
     text-align right
     position relative
     float right
@@ -187,7 +184,7 @@
     font-size 11pt
     line-height 1.6
     padding 56px 0 44px
-    margin-top 54px
+    margin-top 44px
     
     .b-h3
       font-size 18pt
@@ -195,9 +192,35 @@
       margin -4px 0 8px
     
   &__copyright
-    padding 55px 0 78px
+    padding 33px 0 78px
     font-size 10pt
     color #ccc
+    text-align right
+    
+    @media( max-width 767px )
+      text-align center
+    
+  &__social
+    padding-top 33px
+    
+    @media( max-width 767px )
+      text-align center
+    
+    a
+      display inline-block
+      width 24px
+      height 24px
+      margin 0 20px 20px 0
+      
+      &:hover
+        opacity .7
+      
+    img
+      width 24px
+      height 24px
+      display inline-block
+      vertical-align top
+      
       
 @keyframes fadeOutBg
   0%
